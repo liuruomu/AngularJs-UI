@@ -1,0 +1,30 @@
+
+<!doctype html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./pagination.css">
+</head>
+<body ng-controller="testController">
+
+<csp-pagination conf="paginationConf"></csp-pagination>
+
+<script src="./angular.min.js"></script>
+<script src="./csp.pagination.js"></script>
+<script>
+    angular.module('myApp', ['csp.pagination']).controller('testController', function($scope, $timeout){
+
+        $scope.paginationConf = {
+            currentPage: 1,
+            totalItems: 8000,
+            itemsPerPage: 15,
+            pagesLength: 15,
+            perPageOptions: [10, 20, 30, 40, 50],
+            onChange: function(){
+            }
+        };
+
+    })
+</script>
+</body>
+</html>
