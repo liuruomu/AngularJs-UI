@@ -2,7 +2,7 @@
 使用angularjs directive来封装的分页组件。去掉了原插件对boostrap 分页组件的使用（主要是我们的项目没有使用boostrap）。另外，将分页的html单独拿出来，尽量不使用原插件中'+'连接的方式。
 
 ## csp.pagination -- A very simple and useful pagination in AngularJs
-Online demo [csp.pagination](https://github.com/xixi880928/AngularJs-UI/blob/master/app/index.html)
+Online demo [csp.pagination](http://demo.miaoyueyue.com/js/ng/AngularJs-UI/demo/pagination.html)
 
 **relate blog articles:**
 
