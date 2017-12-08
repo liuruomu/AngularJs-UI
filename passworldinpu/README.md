@@ -4,10 +4,14 @@
 
 
 效果展示：
+[显示密码](https://github.com/xixi880928/AngularJs-UI/blob/master/passworldinpu/app/%E7%9D%81%E7%9C%BC.png)
+[隐藏密码](https://github.com/xixi880928/AngularJs-UI/blob/master/passworldinpu/app/%E9%97%AD%E7%9C%BC.png)
 
 **relate blog articles:**
-
+[angular.element](http://www.jb51.net/article/59544.htm)
 -
+
+```
     // in the view
     <csp-password-input conf="passwordConf"></csp-password-input>
 
@@ -17,7 +21,7 @@
     disable:false
 
     };
-
+```
 
 conf is a object, it has attributes like below:
 
