@@ -1,0 +1,22 @@
+
+<!doctype html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./iconstyle/iconfont.css">
+</head>
+<body ng-controller="testController">
+<csp-password-input conf="passwordConf"></csp-password-input>
+<script src="./angular.min.js"></script>
+<script src="./csp.passwordinput.js"></script>
+<script>
+angular.module('myApp', ['csp.passwordinput']).controller('testController', ['$scope',function($scope){
+$scope.passwordConf = {
+password: 1,
+disable:false
+
+};
+}])
+</script>
+</body>
+</html>
