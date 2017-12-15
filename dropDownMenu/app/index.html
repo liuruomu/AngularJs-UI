@@ -1,0 +1,28 @@
+
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./dropDownMenu.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="./common.css" media="screen"  charset="utf-8">
+</head>
+
+<body ng-controller="testController">
+    <csp-drop-down-menu placeholder-text="下拉菜单" select-options="{{someOptions}}" click-this-item=" clikeThisItem(option) " ></csp-drop-down-menu>
+<script src="../../angular.min.js "></script>
+<script src="./dropDownMenu.js "></script>
+<script>
+angular.module('myApp', ['csp.dropDownMenu']).controller('testController', ['$scope',function($scope){
+  $scope.someOptions =[
+    {'text':'1'},
+    {'text':'2'}
+  ]
+  $scope.clickThisItem = function(op){
+    console.log(op);
+  }
+
+}])
+</script>
+</body>
+</html>
